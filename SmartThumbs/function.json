@@ -1,0 +1,19 @@
+{
+    "bindings": [{
+            "name": "myBlob",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "gallery/{name}",
+            "connection": "btco_STORAGE",
+            "dataType": "binary"
+        },
+        {
+            "type": "blob",
+            "name": "outputBlob",
+            "path": "gallery-thumbs/{name}",
+            "connection": "btco_STORAGE",
+            "direction": "out"
+        }
+    ],
+    "disabled": false
+}

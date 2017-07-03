@@ -1,0 +1,33 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "gallery/{name}.{extension}",
+      "connection": "btco_STORAGE"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob1600",
+      "path": "gallery-1600/{name}.{extension}",
+      "connection": "btco_STORAGE",
+      "direction": "inout"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob800",
+      "path": "gallery-800/{name}.{extension}",
+      "connection": "btco_STORAGE",
+      "direction": "inout"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob400",
+      "path": "gallery-400/{name}.{extension}",
+      "connection": "btco_STORAGE",
+      "direction": "inout"
+    }
+  ],
+  "disabled": false
+}
