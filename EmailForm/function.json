@@ -1,8 +1,0 @@
-{
-    "name": "req",
-    "type": "httpTrigger",
-    "direction": "in",
-    "authLevel": "function",
-    "methods": ["post"],
-    "route": "values/{id}"
-}
