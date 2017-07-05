@@ -20,7 +20,7 @@ public static void Run(Stream myBlob, Stream outputBlob, TraceWriter log)
         using (HttpContent content = new StreamContent(myBlob))
         {
             //get response
-            content.Headers.ContentType.Add = new MediaTypeWithQualityHeaderValue("application/octet-stream");
+            content.Headers.ContentType = new MediaTypeWithQualityHeaderValue("application/octet-stream");
             var uri = $"{_apiUrlBase}?width={width}&height={height}&smartCropping={smartCropping.ToString()}";
             var response = httpClient.PostAsync(uri, content).Result;
             var responseBytes = response.Content.ReadAsByteArrayAsync().Result;
